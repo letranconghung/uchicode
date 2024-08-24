@@ -1,3 +1,3 @@
-main = do
-  putStrLn "Hello, everybody!"
-  putStrLn ("Please look at my favorite odd numbers: " ++ show (filter odd [10..20]))
+factorial:: (Integral a) => a -> a
+factorial 0 = 1
+factorial n = n * factorial (n-1)
